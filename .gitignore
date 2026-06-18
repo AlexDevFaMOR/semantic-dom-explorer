@@ -2,14 +2,16 @@
 .DS_Store
 Thumbs.db
 
-# VS Code
+# IDE
 .vscode/
+.idea/
 
 # Logs
 *.log
 
-# Node
+# Node (si en el futuro agregas herramientas)
 node_modules/
 
-# Environment
-.env
+# Build
+dist/
+build/

@@ -1,48 +1,60 @@
 # Semantic DOM Explorer
 
-Proyecto de práctica y aprendizaje enfocado en JavaScript, manipulación del DOM y arquitectura frontend modular.
+Semantic DOM Explorer is an interactive educational web application designed to visualize, inspect, and understand the Document Object Model (DOM) through semantic HTML and Vanilla JavaScript.
 
-## Objetivos
+## Objectives
 
-- Comprender el DOM a profundidad.
-- Aplicar JavaScript moderno (ES6+).
-- Practicar separación de responsabilidades.
-- Implementar una arquitectura escalable.
-- Construir componentes reutilizables.
-- Desarrollar habilidades de frontend profesional.
+* Learn semantic HTML structure
+* Visualize DOM hierarchy
+* Explore parent-child relationships
+* Practice DOM traversal techniques
+* Understand DOM manipulation in real time
 
-## Tecnologías
+## Features (Planned)
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+* Interactive DOM Tree
+* Element Inspector
+* Semantic HTML Playground
+* DOM Traversal Visualization
+* Dynamic Element Highlighting
+* Educational Semantic Information Panel
+* Breadcrumb Navigation
+* DOM Mutation Controls
 
-## Arquitectura
+## Tech Stack
 
-src/
-├── css/
-├── js/
-│ ├── core/
-│ ├── dom/
-│ ├── ui/
-│ └── data/
+* HTML5
+* CSS3
+* JavaScript ES6+
 
-## Estado del proyecto
+## Project Status
 
-🚧 En desarrollo
+🚧 Under Development
 
 ## Roadmap
 
-- [ ] Estructura semántica HTML
-- [ ] Selección de elementos DOM
-- [ ] Manipulación de contenido
-- [ ] Manipulación de atributos
-- [ ] Eventos
-- [ ] Creación dinámica de elementos
-- [ ] Componentes reutilizables
-- [ ] Persistencia de datos
-- [ ] Proyecto final
+### Phase 1
 
-## Autor
+* [x] Project architecture
+* [x] Semantic layout structure
+
+### Phase 2
+
+* [ ] CSS Grid layout
+* [ ] Visual semantic sections
+
+### Phase 3
+
+* [ ] DOM Inspector
+
+### Phase 4
+
+* [ ] Interactive DOM Tree
+
+### Phase 5
+
+* [ ] DOM Manipulation Features
+
+## Author
 
 Geovani Alejandro Padilla Morales
