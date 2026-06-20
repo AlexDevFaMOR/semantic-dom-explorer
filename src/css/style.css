@@ -18,6 +18,8 @@ body {
     --footer-color: #64748b;
     --border-color: #1e293b;
     --spacing: 1rem;
+
+
 }
 
 body {
@@ -100,3 +102,65 @@ footer {
     padding: 1rem;
     border-radius: 8px;
 }
+
+:root {
+    --header-demo: #2563eb;
+    --nav-demo: #16a34a;
+    --main-demo: #f59e0b;
+    --article-demo: #ef4444;
+    --aside-demo: #8b5cf6;
+    --figure-demo: #06b6d4;
+    --footer-demo: #64748b;
+}
+
+.semantic-element {
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.header-demo {
+    background: var(--header-demo);
+}
+
+.nav-demo {
+    background: var(--nav-demo);
+}
+
+.main-demo {
+    background: var(--main-demo);
+}
+
+.article-demo {
+    background: var(--article-demo);
+}
+
+.aside-demo {
+    background: var(--aside-demo);
+}
+
+.figure-demo {
+    background: var(--figure-demo);
+}
+
+.footer-demo {
+    background: var(--footer-demo);
+}
+
+.semantic-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns:
+        2fr
+        1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
