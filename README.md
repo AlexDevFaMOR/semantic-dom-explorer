@@ -2,24 +2,73 @@
 
 Semantic DOM Explorer is an interactive educational web application designed to visualize, inspect, and understand the Document Object Model (DOM) through semantic HTML and Vanilla JavaScript.
 
-## Objectives
+## Project Goal
 
-* Learn semantic HTML structure
-* Visualize DOM hierarchy
-* Explore parent-child relationships
-* Practice DOM traversal techniques
-* Understand DOM manipulation in real time
+The main objective of this project is to provide a visual and interactive environment for learning:
 
-## Features (Planned)
+* Semantic HTML structure
+* DOM hierarchy
+* Parent-child relationships
+* DOM traversal techniques
+* DOM manipulation fundamentals
+* Accessibility-oriented markup
+
+## Current Features
+
+### Project Architecture
+
+* Modular folder structure
+* Separation of concerns
+* Organized CSS and JavaScript directories
+
+### Semantic HTML Layout
+
+The application includes a semantic structure composed of:
+
+* Header
+* Navigation
+* Main Content
+* Sections
+* Articles
+* Asides
+* Footer
+
+### CSS Layout
+
+* CSS Grid based layout
+* Responsive foundation
+* CSS Custom Properties (Variables)
+* Modular styling approach
+
+## Planned Features
+
+### DOM Explorer
 
 * Interactive DOM Tree
-* Element Inspector
-* Semantic HTML Playground
-* DOM Traversal Visualization
-* Dynamic Element Highlighting
-* Educational Semantic Information Panel
-* Breadcrumb Navigation
-* DOM Mutation Controls
+* Parent-child visualization
+* Node traversal
+
+### DOM Inspector
+
+* Selected element information
+* Tag identification
+* Classes and IDs
+* Parent and child relationships
+
+### Semantic Learning Mode
+
+* Semantic element descriptions
+* Usage recommendations
+* Accessibility information
+* SEO considerations
+
+### DOM Manipulation
+
+* Create elements
+* Remove elements
+* Edit content
+* Modify attributes
+* Style manipulation
 
 ## Tech Stack
 
@@ -27,33 +76,63 @@ Semantic DOM Explorer is an interactive educational web application designed to 
 * CSS3
 * JavaScript ES6+
 
-## Project Status
+## Project Structure
 
-🚧 Under Development
+```text
+semantic-dom-explorer/
+│
+├── src/
+│   ├── css/
+│   ├── js/
+│   │   ├── core/
+│   │   ├── dom/
+│   │   ├── ui/
+│   │   ├── data/
+│   │   └── utils/
+│   │
+│   └── index.html
+│
+├── docs/
+│
+└── README.md
+```
 
-## Roadmap
+## Development Roadmap
 
-### Phase 1
+### Phase 1 — Foundation
 
 * [x] Project architecture
-* [x] Semantic layout structure
+* [x] Semantic HTML structure
+* [x] Initial CSS Grid layout
 
-### Phase 2
+### Phase 2 — Playground
 
-* [ ] CSS Grid layout
-* [ ] Visual semantic sections
+* [ ] Semantic visual playground
+* [ ] Semantic color system
+* [ ] Interactive sections
 
-### Phase 3
+### Phase 3 — DOM Inspector
 
-* [ ] DOM Inspector
+* [ ] Element selection
+* [ ] Inspector panel
+* [ ] Element highlighting
 
-### Phase 4
+### Phase 4 — DOM Tree
 
-* [ ] Interactive DOM Tree
+* [ ] Dynamic DOM tree
+* [ ] Hierarchy visualization
+* [ ] Breadcrumb navigation
 
-### Phase 5
+### Phase 5 — DOM Manipulation
 
-* [ ] DOM Manipulation Features
+* [ ] Create nodes
+* [ ] Remove nodes
+* [ ] Edit content
+* [ ] Update attributes
+
+## Status
+
+🚧 Active Development
 
 ## Author
 
