@@ -6,42 +6,198 @@
     <title>Semantic DOM Explorer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header></header>
-    <nav></nav>
+
+    <!-- Application Header -->
+    <header>
+        <h1>Semantic DOM Explorer</h1>
+        <p>Interactive visualization of the DOM and Semantic HTML</p>
+    </header>
+
+    <!-- Application Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Playground</a></li>
+            <li><a href="#">DOM Tree</a></li>
+            <li><a href="#">Inspector</a></li>
+            <li><a href="#">Documentation</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <aside id="dom-tree"></aside>
+
+        <!-- DOM Tree -->
+        <aside id="dom-tree">
+
+            <h2>DOM Tree</h2>
+
+        </aside>
+
+        <!-- Semantic Playground -->
         <section id="playground">
-            <h2>Semantic Playground</h2>
-            <div class="semantic-layout">
-                <div class="semantic-element header-demo">
-                    HEADER
-                </div>
-                <div class="semantic-element nav-demo">
-                    NAV
-                </div>
-                <div class="semantic-element main-demo">
-                    MAIN
-                    <div class="main-content">
-                        <div class="semantic-element article-demo">
-                            ARTICLE
-                        </div>
-                        <div class="semantic-element aside-demo">
-                            ASIDE
-                        </div>
-                    </div>
-                    <div class="semantic-element figure-demo">
-                        FIGURE
-                    </div>
-                </div>
-                <div class="semantic-element footer-demo">
-                    FOOTER
-                </div>
-            </div>
-        </section>
-        <aside id="inspector"></aside>
-        <aside id="semantic-info"></aside>
+
+    <h2>Semantic Playground</h2>
+
+    <div id="playground-document">
+
+        <header class="semantic-element" data-element="header">
+            <h3>Semantic Blog</h3>
+            <p>Learning Semantic HTML</p>
+        </header>
+
+        <nav class="semantic-element" data-element="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="semantic-element" data-element="main">
+
+            <section class="semantic-element" data-element="section">
+
+                <h3>Latest Articles</h3>
+
+                <article class="semantic-element" data-element="article">
+
+                    <h4>Introduction to Semantic HTML</h4>
+
+                    <p>
+                        Semantic HTML improves accessibility, SEO and code readability.
+                    </p>
+
+                    <button type="button">
+                        Read More
+                    </button>
+
+                </article>
+
+                <article class="semantic-element" data-element="article">
+
+                    <h4>DOM Traversal</h4>
+
+                    <p>
+                        Learn how to navigate the DOM tree efficiently.
+                    </p>
+
+                    <time datetime="2026-07-22">
+                        July 22, 2026
+                    </time>
+
+                </article>
+
+            </section>
+
+            <aside class="semantic-element" data-element="aside">
+
+                <h3>Related Resources</h3>
+
+                <ul>
+                    <li>MDN Web Docs</li>
+                    <li>WHATWG HTML</li>
+                    <li>JavaScript Guide</li>
+                </ul>
+
+            </aside>
+
+            <section class="semantic-element" data-element="section">
+
+                <figure class="semantic-element" data-element="figure">
+
+                    <img
+                        src="https://placehold.co/600x250"
+                        alt="Semantic HTML Diagram">
+
+                    <figcaption>
+                        Basic Semantic HTML Structure
+                    </figcaption>
+
+                </figure>
+
+            </section>
+
+            <section class="semantic-element" data-element="section">
+
+                <h3>Contact Form</h3>
+
+                <form class="semantic-element" data-element="form">
+
+                    <fieldset>
+
+                        <legend>Personal Information</legend>
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="John Doe">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="john@example.com">
+
+                        <button type="submit">
+                            Send
+                        </button>
+
+                    </fieldset>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer class="semantic-element" data-element="footer">
+
+            <p>
+                © 2026 Semantic Blog
+            </p>
+
+        </footer>
+
+    </div>
+
+</section>
+
+        <!-- Inspector -->
+
+        <aside id="inspector">
+
+            <h2>Inspector</h2>
+
+        </aside>
+
+        <!-- Semantic Information -->
+
+        <aside id="semantic-info">
+
+            <h2>Semantic Information</h2>
+
+        </aside>
+
     </main>
-    <footer></footer>
+
+    <footer>
+
+        <p>
+
+            Built with HTML, CSS and Vanilla JavaScript
+
+        </p>
+
+    </footer>
+
 </body>
 </html>

@@ -1,144 +1,184 @@
 # Semantic DOM Explorer
 
-Semantic DOM Explorer is an interactive educational web application designed to visualize, inspect, and understand the Document Object Model (DOM) through semantic HTML and Vanilla JavaScript.
+An interactive educational web application that visualizes the Document Object Model (DOM) using semantic HTML and modern JavaScript. The project is designed to demonstrate DOM traversal, manipulation, event handling, and semantic HTML concepts through an interactive playground.
 
-## Project Goal
+---
 
-The main objective of this project is to provide a visual and interactive environment for learning:
+## Objectives
 
-* Semantic HTML structure
-* DOM hierarchy
-* Parent-child relationships
-* DOM traversal techniques
-* DOM manipulation fundamentals
-* Accessibility-oriented markup
+* Understand semantic HTML structure.
+* Visualize the DOM hierarchy.
+* Explore parent-child relationships.
+* Practice DOM traversal APIs.
+* Manipulate DOM elements dynamically.
+* Apply clean architecture and modular JavaScript.
+
+---
 
 ## Current Features
 
 ### Project Architecture
 
-* Modular folder structure
-* Separation of concerns
-* Organized CSS and JavaScript directories
-
-### Semantic HTML Layout
-
-The application includes a semantic structure composed of:
-
-* Header
-* Navigation
-* Main Content
-* Sections
-* Articles
-* Asides
-* Footer
-
-### CSS Layout
-
-* CSS Grid based application layout
-* Responsive foundation
-* CSS Custom Properties (Variables)
-* Modular styling approach
+* Modular project structure.
+* Separation of concerns.
+* Scalable JavaScript architecture.
+* Documentation-driven development.
 
 ### Semantic Playground
 
-Visual representation of semantic HTML elements:
+* Real semantic HTML document.
+* Semantic elements using native HTML5 tags.
+* Educational content for DOM exploration.
+* Ready for interactive inspection.
 
-* Header
-* Navigation
-* Main
-* Article
-* Aside
-* Figure
-* Footer
+### Layout
 
-Features:
+* Responsive CSS Grid layout.
+* Design Tokens (CSS Custom Properties).
+* Reusable UI components.
+* Interactive hover states.
 
-* Color-coded semantic sections
-* Educational visual structure
-* Interactive-ready component design
+### JavaScript Foundation
 
-## Planned Features
+Current architecture:
 
-### DOM Inspector
+```text
+src/js
+│
+├── core/
+│   ├── app.js
+│   └── state.js
+│
+├── data/
+├── dom/
+├── ui/
+└── utils/
+```
 
-* Selected element information
-* Tag identification
-* Classes and IDs
-* Parent and child relationships
+The JavaScript layer follows a modular architecture where each folder has a single responsibility.
 
-### DOM Tree
+---
 
-* Dynamic hierarchy visualization
-* Node exploration
-* Breadcrumb navigation
-
-### Semantic Learning Mode
-
-* Element descriptions
-* Accessibility guidance
-* SEO recommendations
-* Best practices
-
-### DOM Manipulation
-
-* Create nodes
-* Remove nodes
-* Edit content
-* Modify attributes
-* Dynamic style updates
-
-## Tech Stack
+## Technology Stack
 
 * HTML5
 * CSS3
 * CSS Grid
-* CSS Variables
-* JavaScript ES6+
+* CSS Custom Properties
+* Vanilla JavaScript (ES Modules)
+* Git
+* GitHub
+
+---
+
+## Project Structure
+
+```text
+semantic-dom-explorer/
+│
+├── src/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── core/
+│   │   │   ├── app.js
+│   │   │   └── state.js
+│   │   ├── data/
+│   │   ├── dom/
+│   │   ├── ui/
+│   │   └── utils/
+│   │
+│   └── index.html
+│
+├── docs/
+│
+└── README.md
+```
+
+---
 
 ## Development Roadmap
 
-### Phase 1 — Foundation
+### Phase 1 — Foundation ✅
 
 * [x] Project architecture
 * [x] Semantic HTML structure
-* [x] Initial CSS Grid layout
+* [x] CSS layout
+* [x] Responsive foundation
 
-### Phase 2 — Semantic Playground
+### Phase 2 — Semantic Playground ✅
 
-* [x] Semantic visual playground
-* [x] Color system
+* [x] Semantic HTML document
 * [x] Interactive-ready layout
+* [x] Educational content
 
-### Phase 3 — DOM Interaction
+### Phase 3 — JavaScript Architecture 🚧
+
+* [x] Core module
+* [x] Application state module
+* [ ] DOM selectors
+* [ ] Event manager
+* [ ] Inspector module
+* [ ] DOM traversal module
+
+### Phase 4 — DOM Interaction
 
 * [ ] Element selection
-* [ ] Active element highlighting
-* [ ] Event handling
+* [ ] Highlight selected element
+* [ ] Event delegation
+* [ ] Dynamic updates
 
-### Phase 4 — DOM Inspector
+### Phase 5 — DOM Inspector
 
-* [ ] Element information panel
-* [ ] Parent-child analysis
-* [ ] Attribute visualization
+* [ ] Tag information
+* [ ] Parent element
+* [ ] Child elements
+* [ ] Attributes
+* [ ] Dataset values
 
-### Phase 5 — DOM Tree
+### Phase 6 — DOM Tree
 
-* [ ] Dynamic DOM hierarchy
-* [ ] Traversal visualization
-* [ ] Breadcrumb navigation
+* [ ] Recursive DOM tree generation
+* [ ] Expand and collapse nodes
+* [ ] Tree navigation
 
-### Phase 6 — DOM Manipulation
+### Phase 7 — DOM Manipulation
 
 * [ ] Create elements
 * [ ] Remove elements
-* [ ] Modify content
 * [ ] Update attributes
+* [ ] Edit content
+* [ ] Move nodes
 
-## Status
+---
 
-🚧 Active Development
+## Development Principles
+
+This project follows modern software engineering practices:
+
+* Modular architecture
+* Separation of concerns
+* Single Responsibility Principle (SRP)
+* Progressive enhancement
+* Clean and maintainable code
+* Incremental development with Git
+
+---
+
+## Project Status
+
+🚧 **In Active Development**
+
+Current milestone:
+
+* Semantic HTML completed.
+* CSS architecture completed.
+* JavaScript architecture initialized.
+* Ready to implement DOM interaction.
+
+---
 
 ## Author
 
-Geovani Alejandro Padilla Morales
+**Geovani Alejandro Padilla Morales**

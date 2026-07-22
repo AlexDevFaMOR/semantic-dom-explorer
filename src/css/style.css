@@ -1,166 +1,548 @@
-* {
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-}
+
+/* ==========================================================================
+   DESIGN TOKENS
+   ========================================================================== */
 
 :root {
-    --header-color: #2563eb;
-    --nav-color: #16a34a;
-    --tree-color: #f59e0b;
-    --playground-color: #ef4444;
-    --inspector-color: #8b5cf6;
-    --semantic-color: #06b6d4;
-    --footer-color: #64748b;
-    --border-color: #1e293b;
-    --spacing: 1rem;
 
+    /* Colors */
+
+    --color-primary: #2563eb;
+    --color-secondary: #16a34a;
+
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+
+    --color-text: #1e293b;
+    --color-text-light: #ffffff;
+
+    --color-border: #cbd5e1;
+
+    --color-hover: #eff6ff;
+
+    /* Spacing */
+
+    --spacing-xs: .5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+
+    /* Radius */
+
+    --radius-sm: .5rem;
+    --radius-md: .75rem;
+
+    /* Shadow */
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.10);
 
 }
 
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+
 body {
+
+    min-height: 100vh;
+
     display: grid;
+
     grid-template-rows:
         auto
         auto
         1fr
         auto;
 
-    min-height: 100vh;
+    gap: var(--spacing-sm);
+
+    padding: var(--spacing-sm);
+
+    background: var(--color-background);
+
+    color: var(--color-text);
+
     font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-    gap: 0.5rem;
-    padding: 0.5rem;
+    line-height: 1.6;
+
 }
 
-header {
-    background-color: var(--header-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
+img {
+
+    display: block;
+
+    max-width: 100%;
+
 }
 
-nav {
-    background-color: var(--nav-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
+ul {
+
+    list-style: none;
+
 }
 
-main {
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+button {
+
+    font: inherit;
+
+    cursor: pointer;
+
+}
+
+input {
+
+    font: inherit;
+
+}
+
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    margin-bottom: .75rem;
+
+}
+
+p {
+
+    margin-bottom: .75rem;
+
+}
+
+
+/* ==========================================================================
+   APPLICATION LAYOUT
+   ========================================================================== */
+
+body > header,
+body > nav,
+body > footer {
+
+    background: var(--color-primary);
+
+    color: var(--color-text-light);
+
+    padding: var(--spacing-md);
+
+    border-radius: var(--radius-md);
+
+}
+
+body > footer {
+
+    text-align: center;
+
+}
+
+body > main {
+
     display: grid;
+
     grid-template-columns:
         300px
         1fr;
+
     grid-template-rows:
         1fr
-        250px;
-    gap: 1rem;
+        260px;
+
+    gap: var(--spacing-md);
+
+}
+
+
+/* ==========================================================================
+   APPLICATION PANELS
+   ========================================================================== */
+
+#dom-tree,
+#playground,
+#inspector,
+#semantic-info {
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    padding: var(--spacing-md);
+
+    box-shadow: var(--shadow-sm);
+
 }
 
 #dom-tree {
-    background-color: var(--tree-color);
+
     grid-column: 1;
+
     grid-row: 1;
+
 }
 
 #playground {
-    background-color: var(--playground-color);
+
     grid-column: 2;
+
     grid-row: 1;
+
 }
 
 #inspector {
-    background-color: var(--inspector-color);
+
     grid-column: 1;
+
     grid-row: 2;
+
 }
 
 #semantic-info {
-    background-color: var(--semantic-color);
+
     grid-column: 2;
+
     grid-row: 2;
+
 }
 
-#dom-tree, #playground, #inspector, #semantic-info {
-    padding: 1rem;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-}
 
-footer {
-    background-color: var(--footer-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-}
+/* ==========================================================================
+   PLAYGROUND DOCUMENT
+   ========================================================================== */
 
-:root {
-    --header-demo: #2563eb;
-    --nav-demo: #16a34a;
-    --main-demo: #f59e0b;
-    --article-demo: #ef4444;
-    --aside-demo: #8b5cf6;
-    --figure-demo: #06b6d4;
-    --footer-demo: #64748b;
-}
+#playground-document {
 
-.semantic-element {
-    padding: 1rem;
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-.header-demo {
-    background: var(--header-demo);
-}
-
-.nav-demo {
-    background: var(--nav-demo);
-}
-
-.main-demo {
-    background: var(--main-demo);
-}
-
-.article-demo {
-    background: var(--article-demo);
-}
-
-.aside-demo {
-    background: var(--aside-demo);
-}
-
-.figure-demo {
-    background: var(--figure-demo);
-}
-
-.footer-demo {
-    background: var(--footer-demo);
-}
-
-.semantic-layout {
     display: flex;
+
     flex-direction: column;
-    gap: 1rem;
+
+    gap: var(--spacing-md);
+
 }
 
-.main-content {
+
+/* ==========================================================================
+   PLAYGROUND HEADER
+   ========================================================================== */
+
+#playground-document > header {
+
+    background: var(--color-primary);
+
+    color: var(--color-text-light);
+
+}
+
+
+/* ==========================================================================
+   PLAYGROUND NAVIGATION
+   ========================================================================== */
+
+#playground-document > nav {
+
+    background: var(--color-secondary);
+
+    color: var(--color-text-light);
+
+}
+
+#playground-document > nav ul {
+
+    display: flex;
+
+    gap: var(--spacing-lg);
+
+}
+
+
+/* ==========================================================================
+   PLAYGROUND MAIN
+   ========================================================================== */
+
+#playground-document > main {
+
     display: grid;
+
     grid-template-columns:
         2fr
         1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+    gap: var(--spacing-md);
+
 }
+
+
+/* ==========================================================================
+   FIRST CONTENT SECTION
+   ========================================================================== */
+
+#playground-document section:first-of-type {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--spacing-md);
+
+}
+
+
+/* ==========================================================================
+   ARTICLES
+   ========================================================================== */
+
+article {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--spacing-sm);
+
+}
+
+article button {
+
+    align-self: flex-start;
+
+    padding:
+        .65rem
+        1rem;
+
+    border: none;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--color-primary);
+
+    color: var(--color-text-light);
+
+}
+
+article button:hover {
+
+    opacity: .9;
+
+}
+
+
+/* ==========================================================================
+   ASIDE
+   ========================================================================== */
+
+aside[data-element="aside"] ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .5rem;
+
+}
+
+
+/* ==========================================================================
+   FIGURE
+   ========================================================================== */
+
+figure {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--spacing-sm);
+
+}
+
+figcaption {
+
+    font-size: .9rem;
+
+}
+
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+
+form {
+
+    width: 100%;
+
+}
+
+fieldset {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--spacing-sm);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
+    padding: var(--spacing-md);
+
+}
+
+label {
+
+    font-weight: 600;
+
+}
+
+input {
+
+    padding: .75rem;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
+}
+
+form button {
+
+    width: fit-content;
+
+    padding:
+        .65rem
+        1.2rem;
+
+    border: none;
+
+    border-radius: var(--radius-sm);
+
+    background: var(--color-secondary);
+
+    color: var(--color-text-light);
+
+}
+
+
+/* ==========================================================================
+   SEMANTIC ELEMENTS
+   ========================================================================== */
+
+.semantic-element {
+
+    padding: var(--spacing-md);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    background: var(--color-surface);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+
+    cursor: pointer;
+
+}
+
+.semantic-element:hover {
+
+    transform: translateY(-2px);
+
+    border-color: var(--color-primary);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* ==========================================================================
+   STATES
+   ========================================================================== */
+
+.selected {
+
+    border-color: var(--color-primary);
+
+    outline: 3px solid rgba(37, 99, 235, .25);
+
+}
+
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+    body > main {
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+    }
+
+    #dom-tree,
+    #playground,
+    #inspector,
+    #semantic-info {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+    }
+
+    #playground-document > main {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
