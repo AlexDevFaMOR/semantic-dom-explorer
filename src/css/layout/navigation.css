@@ -1,0 +1,20 @@
+/**
+ * navigation.css - Estilos de navegación global y playground
+ */
+
+body > nav {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+#playground-document > nav {
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+}
+
+#playground-document > nav ul {
+    display: flex;
+    gap: var(--spacing-lg);
+}

@@ -1,0 +1,58 @@
+/**
+ * main.css - Layout principal con grid
+ */
+
+body > main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 260px;
+    gap: var(--spacing-md);
+}
+
+#dom-tree {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#playground {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#inspector {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#semantic-info {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Paneles */
+#dom-tree,
+#playground,
+#inspector,
+#semantic-info {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    body > main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #dom-tree,
+    #playground,
+    #inspector,
+    #semantic-info {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}

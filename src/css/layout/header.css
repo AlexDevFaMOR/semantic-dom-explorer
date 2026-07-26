@@ -1,0 +1,10 @@
+/**
+ * header.css - Estilos del header global
+ */
+
+body > header {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}

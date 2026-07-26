@@ -1,0 +1,32 @@
+/**
+ * styles.css - Punto de entrada para todos los estilos
+ * Importa todos los módulos CSS en orden
+ */
+
+/* ===== BASE ===== */
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+
+/* ===== LAYOUT ===== */
+@import 'layout/header.css';
+@import 'layout/navigation.css';
+@import 'layout/main.css';
+@import 'layout/footer.css';
+
+/* ===== COMPONENTS ===== */
+@import 'components/cards.css';
+@import 'components/buttons.css';
+
+/* ===== PLAYGROUND ===== */
+@import 'playground.css';
+
+/* ===== FUTUROS COMPONENTES ===== */
+/* @import 'components/dom-tree.css'; */
+/* @import 'components/inspector.css'; */
+
+
+
+
+
+

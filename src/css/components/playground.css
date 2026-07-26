@@ -1,0 +1,79 @@
+/**
+ * playground.css - Estilos específicos del playground semántico
+ */
+
+/* Header del playground */
+#playground-document > header {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+/* Main del playground (grid interno) */
+#playground-document > main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-md);
+}
+
+/* Primera sección (lista de artículos) */
+#playground-document section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Artículos */
+article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+/* Aside de recursos */
+aside[data-element="aside"] ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* Figure */
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+figcaption {
+    font-size: .9rem;
+}
+
+/* Formulario */
+form {
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-md);
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: .75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+/* Responsive del playground */
+@media (max-width: 1024px) {
+    #playground-document > main {
+        grid-template-columns: 1fr;
+    }
+}

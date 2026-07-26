@@ -1,0 +1,29 @@
+/**
+ * variables.css - Design Tokens del Sistema
+ */
+
+:root {
+    /* ===== COLORS ===== */
+    --color-primary: #2563eb;
+    --color-secondary: #16a34a;
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-text: #1e293b;
+    --color-text-light: #ffffff;
+    --color-border: #cbd5e1;
+    --color-hover: #eff6ff;
+    
+    /* ===== SPACING ===== */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    
+    /* ===== BORDER RADIUS ===== */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    
+    /* ===== SHADOWS ===== */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.10);
+}

@@ -1,0 +1,11 @@
+/**
+ * footer.css - Estilos del footer global
+ */
+
+body > footer {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+}

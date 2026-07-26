@@ -1,0 +1,32 @@
+/**
+ * cards.css - Estilos para tarjetas y contenedores
+ */
+
+/* Contenedor del playground */
+#playground-document {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Elementos semánticos como tarjetas interactivas */
+.semantic-element {
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    cursor: pointer;
+}
+
+.semantic-element:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+}
+
+/* Estado seleccionado */
+.selected {
+    border-color: var(--color-primary);
+    outline: 3px solid rgba(37, 99, 235, .25);
+}

@@ -1,0 +1,23 @@
+/**
+ * typography.css - Estilos tipográficos globales
+ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 0.75rem;
+}
+
+/* Aquí puedes añadir más estilos tipográficos si lo deseas */

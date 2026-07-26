@@ -1,0 +1,25 @@
+/**
+ * buttons.css - Estilos para botones
+ */
+
+article button {
+    align-self: flex-start;
+    padding: .65rem 1rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+article button:hover {
+    opacity: .9;
+}
+
+form button {
+    width: fit-content;
+    padding: .65rem 1.2rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+}
