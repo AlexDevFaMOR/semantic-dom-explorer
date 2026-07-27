@@ -1,112 +1,147 @@
 
 ---
 
-## 📝 Roadmap.md Actualizado
-
-Crea o actualiza el archivo `docs/roadmap.md`:
+## 📄 **docs/roadmap.md** (Hoja de Ruta del Proyecto)
 
 ```markdown
-# Development Roadmap
+# Roadmap del Proyecto
 
-## Phase 1 — Foundation ✅
-**Completed:** 2026-07-22
+## Visión General
 
-- [x] Project architecture
-- [x] Semantic HTML structure
-- [x] CSS layout with Design Tokens
-- [x] Responsive foundation
+El proyecto se desarrolla en fases progresivas, cada una agregando funcionalidad y complejidad. Esta hoja de ruta documenta los hitos completados, los que están en progreso y los planificados para el futuro.
 
 ---
 
-## Phase 2 — Semantic Playground ✅
-**Completed:** 2026-07-22
+## Fase 1: Fundación ✅
 
-- [x] Semantic HTML document with educational content
-- [x] Interactive-ready layout
-- [x] Educational content
-- [x] Visual feedback (hover, selection)
+**Objetivo**: Establecer la base del proyecto con HTML semántico y CSS modular.
 
----
+### Hitos Completados
 
-## Phase 3 — CSS Architecture ✅
-**Completed:** 2026-07-23
+- ☑ Estructura HTML semántica (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`)
+- ☑ Arquitectura CSS modular (base/, layout/, components/)
+- ☑ Design Tokens (variables CSS centralizadas)
+- ☑ Layout responsivo con CSS Grid y Flexbox
+- ☑ Playground con elementos semánticos reales
+- ☑ Estados interactivos (hover, selected)
 
-- [x] Modular CSS with @import
-- [x] Component-based styles
-- [x] Design Tokens (CSS Custom Properties)
-- [x] Responsive design
-- [x] Accessibility support
+### Archivos Creados
 
----
+```text
+src/css/base/reset.css
+src/css/base/variables.css
+src/css/base/typography.css
+src/css/layout/header.css
+src/css/layout/navigation.css
+src/css/layout/main.css
+src/css/layout/footer.css
+src/css/components/dom-tree.css
+src/css/components/inspector.css
+src/css/components/cards.css
+src/css/components/buttons.css
+src/css/playground.css
+src/css/styles.css
+src/index.html
+README.md
+docs/architecture.md
+docs/roadmap.md
 
-## Phase 4 — JavaScript Foundation 🚧
-**Started:** 2026-07-23
+Fase 2: JavaScript Core 🚧
+Objetivo: Implementar la lógica principal de la aplicación.
 
-### Completed
-- [x] Core application module (`app.js`)
-- [x] Global state management (`state.js`)
-- [x] Observer pattern for reactivity
+Hitos Completados
+☑ Módulo de estado global (core/state.js)
 
-### In Progress
-- [ ] DOM selectors (`selector.js`)
-- [ ] Element selection logic
-- [ ] Inspector panel rendering
+☑ Utilidades DOM (utils/dom-helpers.js)
 
-### Planned
-- [ ] DOM traversal utilities
-- [ ] Event delegation patterns
-- [ ] Dynamic UI updates
+Hitos Pendientes
+□ Implementar core/app.js (controlador principal)
 
----
+□ Implementar core/config.js (configuración global)
 
-## Phase 5 — DOM Interaction 📋
-**Planned**
+□ Implementar dom/selector.js (selección de elementos)
 
-- [ ] Element selection with click events
-- [ ] Highlight selected elements
-- [ ] Event delegation patterns
-- [ ] Dynamic UI updates
-- [ ] Keyboard shortcuts (ESC to deselect)
+□ Implementar dom/inspector.js (panel de información)
 
----
+□ Implementar ui/sidebar.js (barra lateral)
 
-## Phase 6 — DOM Inspector 📋
-**Planned**
+□ Implementar utils/storage.js (persistencia de datos)
 
-- [ ] Tag information display
-- [ ] Parent/child relationships
-- [ ] Attributes and properties
-- [ ] Dataset values
-- [ ] Content preview
+Entregables Esperados
+Selección de elementos al hacer clic
 
----
+Resaltado visual del elemento seleccionado
 
-## Phase 7 — DOM Tree Visualization 📋
-**Planned**
+Panel de inspector mostrando información básica (tag, clases, atributos)
 
-- [ ] Recursive DOM tree generation
-- [ ] Expand and collapse nodes
-- [ ] Tree navigation and selection
-- [ ] Synchronization with playground selection
+Fase 3: Interactividad Avanzada ⏳
+Objetivo: Mejorar la experiencia de usuario con funcionalidades interactivas.
 
----
+Hitos Planificados
+□ Generación dinámica del árbol DOM
 
-## Phase 8 — DOM Manipulation 📋
-**Planned**
+□ Expandir/colapsar nodos en el árbol
 
-- [ ] Create elements dynamically
-- [ ] Remove elements
-- [ ] Update attributes and content
-- [ ] Move nodes in the tree
-- [ ] Undo/Redo functionality
+□ Resaltado de elementos al pasar el mouse (hover)
 
----
+□ Navegación por migas de pan (breadcrumb)
 
-## Phase 9 — Polish & Documentation 📋
-**Planned**
+□ Historial de elementos seleccionados
 
-- [ ] Comprehensive testing
-- [ ] Performance optimization
-- [ ] Accessibility audit
-- [ ] Documentation completion
-- [ ] Demo video/screenshots
+Entregables Esperados
+Árbol DOM completamente funcional y navegable
+
+Feedback visual en tiempo real
+
+Navegación intuitiva entre elementos
+
+Fase 4: Manipulación del DOM ⏳
+Objetivo: Permitir la manipulación de elementos del DOM.
+
+Hitos Planificados
+□ Creación de nuevos elementos
+
+□ Eliminación de elementos existentes
+
+□ Edición de atributos y contenido
+
+□ Movimiento de nodos en el árbol
+
+□ Duplicación de elementos
+
+Entregables Esperados
+Editor visual de elementos
+
+Operaciones CRUD en el DOM
+
+Actualización en tiempo real del árbol y el inspector
+
+Fase 5: Optimización y Mejoras ⏳
+Objetivo: Refinar el proyecto y prepararlo para producción.
+
+Hitos Planificados
+□ Optimización de rendimiento (debouncing, throttling)
+
+□ Mejoras de accesibilidad (ARIA, teclado)
+
+□ Modo oscuro (dark mode)
+
+□ Exportación/importación de estado
+
+□ Pruebas unitarias (Jest/Vitest)
+
+□ Empaquetado con Vite
+
+Entregables Esperados
+Aplicación rápida y accesible
+
+Código optimizado para producción
+
+Documentación completa y actualizada
+
+Estado Actual del Proyecto
+🚧 Fase 2: JavaScript Core - En desarrollo
+
+Próximo Hito
+Implementar dom/selector.js para permitir la selección de elementos al hacer clic en el playground.
+
